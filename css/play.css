@@ -1,0 +1,290 @@
+html,body{width:100%; height:100%;font-family:Arial, Helvetica, sans-serif}
+a,div,img{-webkit-user-select: none;}
+.delay1{
+	-webkit-animation-delay:1s;
+}
+.delay3{
+	-webkit-animation-delay:3s;
+}
+.hide2{ opacity:0;}
+.main{
+	width:640px;
+	margin:0 auto;
+	height:100%;
+	background:url(../images/play/bg.jpg) 0 0 no-repeat;
+	position:relative;
+	overflow:hidden;
+}
+.app{
+	width:640px;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+.app .round{
+	width:148px;
+	height:62px;
+	background-image:url(../images/play/round.png);
+	background-position:-445px 0;
+	position:absolute;
+	bottom:285px;
+	right:30px;
+}
+.bt-bg{
+	width:640px;
+	height:141px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:url(../images/play/bt-bg.png)
+}
+.diff-bg{
+	width:640px;
+	height:206px;
+	position:absolute;
+	bottom:99px;
+	left:0;
+	background:url(../images/play/bg2.png);
+}
+.diffbg{
+	-webkit-animation-name:diffbg;
+	-webkit-animation-duration:20s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+.diff-bg2{
+	width:640px;
+	height:206px;
+	position:absolute;
+	bottom:99px;
+	left:0;
+	background:url(../images/play/bg3.png);
+	-webkit-animation-name:diffbg;
+	-webkit-animation-duration:15s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+	-webkit-transition:all linear 1s;
+}
+.diff-bg3{
+	width:640px;
+	height:206px;
+	position:absolute;
+	bottom:99px;
+	left:0;
+	background:url(../images/play/bg4.png);
+	-webkit-animation-name:diffbg;
+	-webkit-animation-duration:10s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+	-webkit-transition:all linear 1s;
+}
+.diff-bg4{
+	width:640px;
+	height:206px;
+	position:absolute;
+	bottom:99px;
+	left:0;
+	background:url(../images/play/bg5.png);
+	-webkit-animation-name:diffbg;
+	-webkit-animation-duration:5s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+	-webkit-transition:all linear 1s;
+}
+.app .cloud{
+	width:299px;
+	height:134px;
+	background:url(../images/play/cloud.png);
+	position:absolute;
+	left:640px;
+	-webkit-transform:scale(0.8);
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+.app .cloud-1{
+	top:50px;
+	-webkit-animation-name:cloud;
+	-webkit-animation-duration:20s;
+}
+.app .cloud-2{
+	top:200px;
+	-webkit-transform:scale(0.4);
+	-webkit-animation-name:cloud;
+	-webkit-animation-duration:10s;
+}
+.app .cloud-3{
+	top:350px;
+	-webkit-animation-name:cloud;
+	-webkit-animation-duration:15s;
+}
+.app .score{
+	width:252px;
+	height:54px;
+	background:url(../images/play/score.png);
+	position:absolute;
+	top:25px;
+	left:60px;
+	z-index:5;
+}
+.app .score span,.app .time span{
+	font-size:37px;
+	font-weight:bold;
+	color:#f6e08f;
+	position:absolute;
+	top:5px;
+	right:55px;
+}
+.app .time{
+	width:252px;
+	height:54px;
+	background:url(../images/play/time.png);
+	position:absolute;
+	top:25px;
+	right:60px;
+	z-index:5;
+}
+.pd-wrapper{
+	width:640px;
+	height:600px;
+	position:absolute;
+	top:100px;
+	left:0;
+}
+.pd-wrapper .gift{
+	position:absolute;
+	right:-160px;	
+}
+.plane{
+	width:204px;
+	height:98px;
+	position:absolute;
+	left:0;
+	bottom:120px;
+}
+.plane .plane-1{
+	position:absolute;
+	left:0;
+	top:0;
+	width:204px;
+	height:98px;
+	background:url(../images/play/plane.png);
+	z-index:2;
+}
+.plane .plane-2{
+	position:absolute;
+	left:0;
+	top:0;
+	width:204px;
+	height:98px;
+	background:url(../images/play/plane2.png);
+	z-index:1;
+	display:none;
+}
+.app .timming{
+	width:188px;
+	height:179px;
+	background-image:url(../images/play/timming.png);
+	position:absolute;
+	top:310px;
+	left:230px;
+	z-index:1001;
+}
+.app .box{
+	width:574px;
+	height:636px;
+	position:absolute;
+	top:100px;
+	left:33px;
+	background:url(../images/play/box_bg.png) no-repeat;
+	z-index:1000;
+}
+.app .box .inner{
+	width:100%;
+	height:100%;
+}
+.box-1 .inner{
+	background:url(../images/play/box1.png) center center no-repeat;
+}
+.box .inner .close{
+	display:block;
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.box-1 .inner .start{
+	display:block;
+	width:220px;
+	height:70px;
+	position:absolute;
+	bottom:157px;
+	right:175px;
+}
+.box-1 .inner .invite{
+	display:block;
+	width:130px;
+	height:43px;
+	position:absolute;
+	top:126px;
+	left:163px;
+}
+.box-3 .inner{
+	background:url(../images/play/box3.png) center center no-repeat;
+}
+.box-3 .inner .remain-times{
+	position:absolute;
+	top:200px;
+	right:347px;
+	font-size:47px;
+	font-weight:bold;
+	color:#003567;
+}
+.box-3 .inner .game-score{
+	position:absolute;
+	top:190px;
+	right:202px;
+	font-size:47px;
+	width:120px;
+	height:50px;
+	display:block;
+	font-weight:bold;
+	color:#003567;
+	text-align:center;
+}
+.box-3 .inner .draw{
+	display:block;
+	width:220px;
+	height:70px;
+	position:absolute;
+	top:288px;
+	right:175px;
+}
+.box-3 .inner .play-again{
+	display:block;
+	width:220px;
+	height:70px;
+	position:absolute;
+	top:372px;
+	right:175px;
+}
+.box-3 .inner .share-score{
+	display:block;
+	width:220px;
+	height:70px;
+	position:absolute;
+	top:454px;
+	right:175px;
+}
+@-webkit-keyframes cloud{
+	0%
+	{-webkit-transform:translateX(0);}
+	100%
+	{-webkit-transform:translateX(-1000px);}
+}
+@-webkit-keyframes diffbg{
+	0%
+	{background-position:0;}
+	100%
+	{background-position:-5114px;}
+}

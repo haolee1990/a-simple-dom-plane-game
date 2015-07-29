@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=640,user-scalable=no,target-densitydpi=device-dpi">
+	<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>AQ又飞啦</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/play.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/zepto.touch.js"></script>
+    <script src="js/setViewport.js"></script>
+</head>
+
+<body>
+	<div class="main hide">
+		<div class="app">
+        	<div class="score"><span>0</span></div>
+            <div class="time"><span>00:00</span></div>
+        	<div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="round"></div>
+            <div>
+         		<div class="diff-bg"></div>
+                <div class="diff-bg2 hide2"></div>
+                <div class="diff-bg3 hide2"></div>
+                <div class="diff-bg4 hide2"></div>
+            </div>
+        	<div class="bt-bg"></div>
+            <div class="pd-wrapper"></div>
+            <div class="plane" id="plane">
+            	<div class="plane-1"></div>
+                <div class="plane-2"></div>
+            </div>
+            <!--游戏倒计时-->
+            <div class="timming hide"></div>
+            <!--游戏提示弹框-->
+            <div class="box box-1 animated bounceIn">
+            	<div class="inner">
+                	<a class="close" href="javascript:;"></a>
+                    <a class="start" href="javascript:;"></a>
+                    <a class="invite" href="javascript:;"></a>
+                </div>
+            </div>
+             <!--游戏结束提示弹框-->
+             <div class="box box-3 animated bounceIn hide">
+            	<div class="inner">
+                	<a class="close" href="javascript:;"></a>
+                    <a class="draw" href="javascript:;"></a>
+                    <a class="play-again" href="javascript:;"></a>
+                    <a class="share-score" href="javascript:;"></a>
+                    <span class="game-score">0</span>
+                </div>
+            </div>
+        </div><!--app end-->
+    </div><!--main end-->
+     <script src="js/sea.js"></script>
+     <script>
+     	 seajs.config({
+            'map': [
+                [ "play.js", 'play.js?20140620' ],
+				[ "loadImg.js", 'loadImg.js?20140620' ]
+              ]
+            });
+         seajs.use(['loadImg','play']);
+     </script>
+</body>
+</html>
